@@ -1,0 +1,23 @@
+{
+    "short_name": "Tester",
+    "name": "Tester App",
+    "icons": [
+        {
+            "src": "icon.jpg",
+            "type": "image/jpg",
+            "sizes": "48x48"
+        },
+        {
+            "src": "icon.jpg",
+            "type": "image/jpg",
+            "sizes": "96x96"
+        },
+        {
+            "src": "icon.jpg",
+            "type": "image/jpg",
+            "sizes": "192x192"
+        }
+    ],
+    "start_url": "/index.html",
+    "display": "standalone"
+}
