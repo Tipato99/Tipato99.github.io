@@ -10,12 +10,11 @@
     <body>
         <h1>PWA Tester</h1>
         <img src="pup.jpg" alt="puppy">
-            <p><label>First Digit: <input name="First Digit" type="number" value="0"/></label><button type="button" name="1stB" onclick="window.math.Fv(Fv.value)">Enter</button>
-            </p>
-            <p><label>Second Digit: <input name="First Digit" type="number" value="0"/></label><button type="button" name="1stB" onclick="window.math.Sv(Sv.value)">Enter</button>
-            </p>
-            <p><label for="name">Text Input:<input type="text" name="name" minlength="0" maxlength="10" size="10"/></label><button type="button" name="1stB" onclick="window.text.Sv(Sv.value)">Enter</button>
-            </p>
+            <form action="" method="POST"><label>First Digit: <input name="First Digit" type="number" value={{request.form.FDigit}}/></label>
+            <label>Second Digit: <input name="Second Digit" type="number" value={{request.form.SDigit}}/></label><button type="submit">Enter</button>
+            </form>
+            <form action="" method="POST"><label>Text Input:<input type="text" name={{request.form.FDigit}} minlength="0" maxlength="10" size="10"/></label><button type="submit">Enter</button>
+            </form>
         <script>
             navigator.serviceWorker.register('/service_worker.js').then(function() {console.log('登録成功');}).catch(function(err) {console.log('失敗: ',err);});
             
